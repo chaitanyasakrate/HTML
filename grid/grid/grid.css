@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.parent {
+    width: 100%;
+    height: 100%;
+    background-color: silver;
+    border: solid 2px black;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: 
+        "box_01 box_01 box_01"
+        "box_02 box_02 box_03"
+        "box_02 box_02 box_03"
+        "box_04 box_04 box_04";
+    gap: 20px;
+    padding: 20px;
+}
+
+.child1 {
+    grid-area: box_01;
+    background-color: aquamarine;
+}
+
+.child2 {
+    grid-area: box_02;
+    background-color: brown;
+    color: white;
+}
+
+.child3 {
+    grid-area: box_03;
+    background-color: burlywood;
+}
+
+.child4 {
+    grid-area: box_04;
+    background-color: cadetblue;
+    color: white;
+}
+
+div {
+    font-size: 4rem;
+    text-align: center;
+    padding: 1rem;
+}
